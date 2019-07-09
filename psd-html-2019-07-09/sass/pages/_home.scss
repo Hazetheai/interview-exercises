@@ -1,0 +1,16 @@
+main {
+  padding: 0;
+  margin: 0;
+}
+
+.section-banner {
+  background-color: $color-primary;
+  min-height: 8rem;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.section-header {
+  width: 100vw;
+}

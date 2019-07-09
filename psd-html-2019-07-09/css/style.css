@@ -37,8 +37,7 @@ html {
       font-size: 50%; } }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem; }
+  box-sizing: border-box; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -70,6 +69,13 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.hr {
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc); }
 
 @keyframes moveInLeft {
   0% {
@@ -133,14 +139,11 @@ body {
         letter-spacing: 0.5rem; } }
 
 .heading-secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
+  font-size: 2.5rem;
   font-weight: 700;
-  background-image: linear-gradient(to right, #afd441, #2c2c2c);
   display: inline-block;
   -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #94c12b;
   letter-spacing: 0.2rem;
   transition: all 0.3s; }
   @media only screen and (max-width: 56.25em) {
@@ -154,14 +157,20 @@ body {
     text-shadow: 0.5rem 1rem 2rem rgba(21, 21, 21, 0.2); }
 
 .heading-tertiary {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #2c474c; }
 
 .paragraph {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+.cta__text--green {
+  color: #94c12b;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -238,6 +247,15 @@ body {
   background-color: #8b8b8b;
   box-shadow: none; }
 
+.card-row {
+  width: 95vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.card-col {
+  width: 30%; }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -266,10 +284,6 @@ body {
         background-image: linear-gradient(to right bottom, #afd441, #2c2c2c); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #ca5195, #440026); }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
   .card__picture {
     background-size: cover;
     height: 23rem;
@@ -335,31 +349,153 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .card {
-      height: auto;
-      border-radius: 0.3rem;
-      background-color: #edeff0;
-      box-shadow: 0 1.5em 4rem rgba(21, 21, 21, 0.15); }
-      .card__side {
-        height: auto;
-        position: relative;
-        box-shadow: none; }
-        .card__side--back {
-          transform: rotateY(0);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
-      .card__details {
-        padding: 1rem; }
-      .card:hover .card__side--front {
-        transform: rotateY(0); }
-      .card__cta {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(0);
-        width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
-      .card__price-box {
-        margin-bottom: 3rem; }
-      .card__price-value {
-        font-size: 4rem; } }
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  min-width: 70vw; }
+
+.banner__item {
+  padding: 0 1rem;
+  flex: 2 4 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .banner__item:nth-child(5) {
+    height: 80%; }
+  .banner__item--main {
+    flex: 4 1 auto;
+    min-width: 17rem; }
+
+.hydration {
+  text-align: center; }
+
+.hydration--sales {
+  text-align: center; }
+
+.discount25 {
+  text-align: center; }
+
+.timer {
+  background-color: #edeff0;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2c474c;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
+  .timer__wrapper {
+    position: relative;
+    padding: 2rem; }
+  .timer__ends-in {
+    background: #edeff0;
+    position: absolute;
+    bottom: 5.3rem;
+    min-width: 5rem;
+    left: calc(50% - 2.5rem);
+    padding: 0 5px;
+    text-transform: uppercase; }
+  .timer__time {
+    border: solid 3px #94c12b;
+    padding: 0.5rem;
+    min-width: 13rem;
+    text-align: center;
+    font-size: 1.6rem; }
+  .timer__dhms {
+    background: #edeff0;
+    position: absolute;
+    top: 5.1rem;
+    left: calc(50% - 6rem);
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    min-width: 12rem; }
+
+.letter {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-transform: uppercase; }
+
+.header {
+  padding: 3rem;
+  max-width: 60vw;
+  margin: 0 auto; }
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.header__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0; }
+
+.header__subheading {
+  margin-bottom: 0.5rem; }
+
+.header__content {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.header__text {
+  color: #2c474c;
+  font-size: 2rem; }
+
+.subheader-img {
+  margin: 1rem; }
+
+.nav__item {
+  min-width: 31.5rem;
+  position: relative;
+  background-color: #edeff0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5rem;
+  margin-left: -4rem;
+  z-index: 3;
+  border-radius: 3px;
+  clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%); }
+  .nav__item:nth-child(2) {
+    min-width: 31.5rem;
+    background-color: #2c474c;
+    z-index: 2; }
+  .nav__item:nth-child(3) {
+    min-width: 33.5rem;
+    background-color: #94c12b;
+    z-index: 1;
+    clip-path: none; }
+
+.nav__img {
+  width: 3rem;
+  background-color: black; }
+
+.nav__text {
+  color: #edeff0; }
+  .nav__text:nth-child(1) {
+    color: #2c474c; }
+  .nav__text:nth-child(3) {
+    color: #edeff0; }
+
+main {
+  padding: 0;
+  margin: 0; }
+
+.section-banner {
+  background-color: #94c12b;
+  min-height: 8rem;
+  display: flex;
+  justify-content: center;
+  width: 100vw; }
+
+.section-header {
+  width: 100vw; }

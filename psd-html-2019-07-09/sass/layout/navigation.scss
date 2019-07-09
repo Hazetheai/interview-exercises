@@ -1,0 +1,44 @@
+.nav__item {
+  min-width: 31.5rem;
+  position: relative;
+  background-color: $color-grey-light-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5rem;
+  margin-left: -4rem;
+  z-index: 3;
+  border-radius: 3px;
+
+  clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+
+  &:nth-child(2) {
+    min-width: 31.5rem;
+    background-color: $color-secondary-light;
+    z-index: 2;
+  }
+
+  &:nth-child(3) {
+    min-width: 33.5rem;
+    background-color: $color-primary;
+    z-index: 1;
+    clip-path: none;
+  }
+}
+.nav__img {
+  width: 3rem;
+  background-color: black;
+}
+
+.nav__text {
+  color: $color-white;
+
+  //   TODO
+  &:nth-child(1) {
+    color: $color-secondary-light;
+  }
+
+  &:nth-child(3) {
+    color: $color-white;
+  }
+}

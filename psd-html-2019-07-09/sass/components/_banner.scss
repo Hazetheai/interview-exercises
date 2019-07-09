@@ -1,0 +1,88 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  min-width: 70vw;
+}
+
+.banner__item {
+  padding: 0 1rem;
+  flex: 2 4 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:nth-child(5) {
+    height: 80%;
+  }
+
+  &--main {
+    flex: 4 1 auto;
+    min-width: 17rem;
+  }
+}
+
+.hydration {
+  text-align: center;
+}
+
+.hydration--sales {
+  text-align: center;
+}
+
+.discount25 {
+  text-align: center;
+}
+
+.timer {
+  background-color: $color-white;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-secondary-light;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+
+  &__wrapper {
+    position: relative;
+    padding: 2rem;
+  }
+
+  &__ends-in {
+    background: $color-white;
+    position: absolute;
+    bottom: 5.3rem;
+    min-width: 5rem;
+    left: calc(50% - 2.5rem);
+    padding: 0 5px;
+    text-transform: uppercase;
+  }
+
+  &__time {
+    border: solid 3px $color-primary;
+    padding: 0.5rem;
+    min-width: 13rem;
+    text-align: center;
+    font-size: $default-font-size;
+  }
+
+  &__dhms {
+    background: $color-white;
+    position: absolute;
+    top: 5.1rem;
+    left: calc(50% - 6rem);
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    min-width: 12rem;
+  }
+}
+.letter {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-transform: uppercase;
+}

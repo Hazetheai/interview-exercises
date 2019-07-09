@@ -12,50 +12,59 @@
       <!-- Banner -->
       <section class="section-banner">
         <div class="banner">
-          <div class="banner--content banner--item">
+          <div class="banner__item">
             <h3 class="hydration">hydration</h3>
-            <h4 class="sales">sales</h4>
+            <h4 class="hydration--sales">sales</h4>
           </div>
-          <div class="banner--content banner--item">stars</div>
-          <div class="banner--content banner--item">
+          <div class="banner__item">stars</div>
+          <div class="banner__item banner__item--main">
             <h2 class="discount25">25% off</h2>
             <h3 class="hydroxinol"></h3>
           </div>
-          <div class="banner--content banner--item">stars</div>
-          <div class="banner--content banner--item">
-            <div class="timer">**TODO**</div>
+          <div class="banner__item">stars</div>
+          <div class="banner__item">
+            <div class="timer">
+              <div class="timer__wrapper">
+              <div class="timer__ends-in">ends in</div>
+              <div class="timer__time">00  :  04  :  34  :  11</div>
+              <div class="timer__dhms"><span class="letter">d</span>  <span class="letter">h</span>  <span class="letter">m</span>  <span class="letter">s</span></div>
+            </div>
+          </div>
           </div>
         </div>
       </section>
       <!-- Header -->
       <section class="section-header">
         <header class="header">
-          <nav class="header--nav">
-            <div class="nav--item">
-              <img src="" alt="" class="nav-img" />
-              <p class="nav--text">Hydroxinol Promotion</p>
+          <nav class="header__nav">
+            <div class="nav__item">
+              <img src="" alt="" class="nav__img" />
+              <p class="nav__text">Hydroxinol Promotion</p>
             </div>
-            <div class="nav--item">
-              <img src="" alt="" class="nav-img" />
-              <p class="nav--text">Promotion on Pomera</p>
+            <div class="nav__item">
+              <img src="" alt="" class="nav__img" />
+              <p class="nav__text">Promotion on Pomera</p>
             </div>
-            <div class="nav--item">
-              <img src="" alt="" class="nav-img" />
-              <p class="nav--text">Shopping Cart</p>
+            <div class="nav__item">
+              <img src="" alt="" class="nav__img" />
+              <p class="nav__text">Shopping Cart</p>
             </div>
           </nav>
-          <article class="header--article">
-            <h2 class="header--heading">Add Pomera and SAVE 25% Today Only!</h2>
-            <h3 class="header--subheading">
-              so revolutionary, it's been granted 3 u.s. patents
+       
+          <article class="header__article">
+            <h2 class="header__heading heading-secondary">Add Pomera and SAVE 25% Today Only!</h2>
+            <h3 class="header__subheading heading-tertiary">
+              so revolutionary, it's been granted 3 u.s. patents!
             </h3>
             <hr class="hr" />
-            <img src="" alt="calendar-icon" class="subheader-img" />
-
-            <p class="header--content">
-              <span class="cta--text__green">order now</span>&amp; Receive your
-              order by <strong>07/14/19</strong>
-            </p>
+            <div class="header__content">
+              <img src="" alt="calendar-icon" class="subheader-img" />
+  
+              <p class="header__text">
+                <a href=#0 class="cta__text--green"> order now </a>&amp; Receive your
+                order by <strong >07/14/19</strong>
+              </p>
+            </div>
           </article>
         </header>
       </section>
@@ -63,203 +72,78 @@
       <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-small"></div>
 <!-- card 1 -->
-        <div class="row">
-          <div class="col-1-of-3">
-            <div class="card">
-              <div class="card__side card__side--front card__side--front-1">
-                <div class="card__picture card__picture--1">
-                  &nbsp;
-                </div>
-                <h4 class="card__heading">
-                  <span class="card__heading-span card__heading-span--1">
-                    <img src="" alt="" srcset="" class="card--img" />
-                  </span>
-                </h4>
-                <div class="card__details">
-                  <ul>
-                    <li>25% OFF</li>
-                    <li>1 Month Supply</li>
-                    <li>$9<span class="subscript">.96</span></li>
-                    <li>you save 39<span class="subscript-2">.99</span></li>
-                    <li>
-                      <input
-                        type="checkbox"
-                        name="subscribe"
-                        id="subscribe"
-                      />subscribe &amp; (save 10%)
-                    </li>
-                    <li>
-                      <img src="" alt="" class="card--icon" />Subscription
-                      details
-                    </li>
-                  </ul>
-                </div>
-                <div class="card--cta">
-                  <button class="card--button">add pomera</button>
-                </div>
-                <div class="card--payments-accepted">
-                  <ul class="card-payment-list">
-                    <li class="card-payment-item">
-                      <img src="" alt="" srcset="" />
-                    </li>
-                    <li class="card-payment-item">
-                      <img src="" alt="" srcset="" />
-                    </li>
-                    <li class="card-payment-item">
-                      <img src="" alt="" srcset="" />
-                    </li>
-                    <li class="card-payment-item">
-                      <img src="" alt="" srcset="" />
-                    </li>
-                    <li class="card-payment-item">
-                      <img src="" alt="" srcset="" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card__side card__side--back card__side--back-1">
-                <div class="card__cta">
-                  <div class="card__price-box">
-                    <p class="card__price-only">Only</p>
-                    <p class="card__price-value">$297</p>
-                  </div>
-                  <a href="#popup" class="btn btn--white">Book Now!</a>
-                </div>
-              </div>
-            </div>
+<div class="card-row">
+    <div class="card-col">
+      <div class="card">
+        <div class="card__side card__side--front card__side--front-1">
+          <div class="card__picture card__picture--1">
+            &nbsp;
           </div>
-<!-- card 2 -->
-          <div class="row">
-              <div class="col-1-of-3">
-                <div class="card">
-                  <div class="card__side card__side--front card__side--front-2">
-                    <div class="card__picture card__picture--1">
-                      &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                      <span class="card__heading-span card__heading-span--2">
-                        <img src="" alt="" srcset="" class="card--img" />
-                      </span>
-                    </h4>
-                    <div class="card__details">
-                      <ul>
-                        <li>25% OFF</li>
-                        <li>4 Month Supply</li>
-                        <li>$89<span class="subscript">.89</span></li>
-                        <li>you save $29<span class="subscript-2">.96</span></li>
-                        <li>
-                          <input
-                            type="checkbox"
-                            name="subscribe"
-                            id="subscribe"
-                          />subscribe &amp; (save 10%)
-                        </li>
-                        <li>
-                          <img src="" alt="" class="card--icon" />Subscription
-                          details
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card--cta">
-                      <button class="card--button">add pomera</button>
-                    </div>
-                    <div class="card--payments-accepted">
-                      <ul class="card-payment-list">
-                        <li class="card-payment-item">
-                          <img src="" alt="" srcset="" />
-                        </li>
-                        <li class="card-payment-item">
-                          <img src="" alt="" srcset="" />
-                        </li>
-                        <li class="card-payment-item">
-                          <img src="" alt="" srcset="" />
-                        </li>
-                        <li class="card-payment-item">
-                          <img src="" alt="" srcset="" />
-                        </li>
-                        <li class="card-payment-item">
-                          <img src="" alt="" srcset="" />
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="card__side card__side--back card__side--back-2">
-                    <div class="card__cta">
-                      <div class="card__price-box">
-                        <p class="card__price-only">Only</p>
-                        <p class="card__price-value">$297</p>
-                      </div>
-                      <a href="#popup" class="btn btn--white">Book Now!</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-<!-- card 3 -->
-              <div class="row">
-                  <div class="col-1-of-3">
-                    <div class="card">
-                      <div class="card__side card__side--front card__side--front-3">
-                        <div class="card__picture card__picture--3">
-                          &nbsp;
-                        </div>
-                        <h4 class="card__heading">
-                          <span class="card__heading-span card__heading-span--3">
-                            <img src="" alt="" srcset="" class="card--img" />
-                          </span>
-                        </h4>
-                        <div class="card__details">
-                          <ul>
-                            <li>25% OFF</li>
-                            <li>7 Month Supply</li>
-                            <li>$149<span class="subscript">.81</span></li>
-                            <li>you save 49<span class="subscript-2">.94</span></li>
-                            <li>
-                              <input
-                                type="checkbox"
-                                name="subscribe"
-                                id="subscribe"
-                              />subscribe &amp; (save 10%)
-                            </li>
-                            <li>
-                              <img src="" alt="" class="card--icon" />Subscription
-                              details
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="card--cta">
-                          <button class="card--button">add pomera</button>
-                        </div>
-                        <div class="card--payments-accepted">
-                          <ul class="card-payment-list">
-                            <li class="card-payment-item">
-                              <img src="" alt="" srcset="" />
-                            </li>
-                            <li class="card-payment-item">
-                              <img src="" alt="" srcset="" />
-                            </li>
-                            <li class="card-payment-item">
-                              <img src="" alt="" srcset="" />
-                            </li>
-                            <li class="card-payment-item">
-                              <img src="" alt="" srcset="" />
-                            </li>
-                            <li class="card-payment-item">
-                              <img src="" alt="" srcset="" />
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="card__side card__side--back card__side--back-1">
-                        <div class="card__cta">
-                          <div class="card__price-box">
-                            <p class="card__price-only">Only</p>
-                            <p class="card__price-value">$297</p>
-                          </div>
-                          <a href="#popup" class="btn btn--white">Book Now!</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <h4 class="card__heading">
+            <span class="card__heading-span card__heading-span--1">
+              <img src="" alt="" srcset="" class="card--img" />
+            </span>
+          </h4>
+          <div class="card__details">
+            <ul>
+              <li>25% OFF</li>
+              <li>4 Month Supply</li>
+              <li>$89<span class="subscript">.89</span></li>
+              <li>you save $29<span class="subscript-2">.96</span></li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="subscribe"
+                  id="subscribe"
+                />subscribe &amp; (save 10%)
+              </li>
+              <li>
+                <img src="" alt="" class="card--icon" />Subscription
+                details
+              </li>
+            </ul>
+          </div>
+          <div class="card--cta">
+            <button class="card--button">add pomera</button>
+          </div>
+          <div class="card--payments-accepted">
+            <ul class="card-payment-list">
+              <li class="card-payment-item">
+                <img src="" alt="" srcset="" />
+              </li>
+              <li class="card-payment-item">
+                <img src="" alt="" srcset="" />
+              </li>
+              <li class="card-payment-item">
+                <img src="" alt="" srcset="" />
+              </li>
+              <li class="card-payment-item">
+                <img src="" alt="" srcset="" />
+              </li>
+              <li class="card-payment-item">
+                <img src="" alt="" srcset="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <div class="card__price-box">
+              <p class="card__price-only">Only</p>
+              <p class="card__price-value">$297</p>
+            </div>
+            <a href="#popup" class="btn btn--white">Book Now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+
+
+    
 
         <div class="u-center-text u-margin-top-huge">
           <a href="#" class="btn btn--green">Discover All Tours</a>
@@ -295,7 +179,7 @@
             </ul>
           </div>
         </footer>
-      </section-footer>
+      </section>
       <section class="section-legal">
         <div class="legal--content">
           <p class="legal--paragraph"></p>
