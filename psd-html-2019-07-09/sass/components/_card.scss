@@ -1,240 +1,229 @@
 .card-row {
   width: 95vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .card-col {
-  width: 30%;
+  width: 30rem;
+
+  &__center {
+    width: 28rem;
+    height: 53rem;
+    z-index: 5;
+    margin: 0 -5px;
+  }
 }
 
 .card {
-  //FUNCTIONALITY
-
-  perspective: 150rem;
-  -moz-perspective: 150rem;
   position: relative;
-  height: 52rem;
+  border: 5px solid $color-secondary-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  &__side {
-    height: 52rem;
-    transition: all 0.8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 0.3rem;
-    overflow: hidden;
-    box-shadow: $box-shadow;
-
-    &--front {
-      background-color: $color-white;
-    }
-
-    &--back {
-      background-color: $color-white;
-      transform: rotateY(180deg);
-
-      &-1 {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
-        );
-      }
-      &-2 {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-primary-light,
-          $color-secondary-dark
-        );
-      }
-      &-3 {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-tertiary-light,
-          $color-tertiary-dark
-        );
-      }
-    }
+  &__center {
+    border-color: $color-primary;
+    height: 100%;
+    box-shadow: 0px 0px 3px 2px #f7f7f7;
   }
 
-  // &:hover &__side--front {
-  //   transform: rotateY(-180deg);
-  // }
+  &__img {
+    top: 1rem;
+    position: relative;
+    height: 13.5rem;
+    width: 13.5rem;
+    background: $color-primary-light;
+    border-radius: 100%;
 
-  // &:hover &__side--back {
-  //   transform: rotateY(0);
-  // }
-  //FRONT SIDE STYLING
-  &__picture {
-    background-size: cover;
-    height: 23rem;
-    background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: 0.3rem;
-    border-top-right-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem;
-
-    &--1 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
-        ),
-        url(../img/nat-5.jpg);
-    }
-    &--2 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-primary-light,
-          $color-secondary-dark
-        ),
-        url(../img/nat-6.jpg);
-    }
-    &--3 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-tertiary-light,
-          $color-tertiary-dark
-        ),
-        url(../img/nat-7.jpg);
-    }
-  }
-
-  &__heading {
-    font-size: 2.8rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: right;
-    color: $color-white;
-    position: absolute;
-    top: 12rem;
-    right: 2rem;
-    width: 70%;
-  }
-
-  &__heading-span {
-    padding: 1rem 1.5rem;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    &--1 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary-light, 0.85),
-        rgba($color-secondary-dark, 0.85)
+    &--center {
+      border-radius: 0;
+      height: 17rem;
+      width: 25rem;
+      margin: 2rem 0 3rem 0;
+      background: linear-gradient(
+        180deg,
+        $color-white 49.48%,
+        $color-primary-light 49.49%
       );
     }
-    &--2 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.85),
-        rgba($color-secondary-dark, 0.85)
-      );
+
+    &-img {
+      position: absolute;
+      height: 12rem;
+      width: auto;
+      top: 0.8rem;
     }
-    &--3 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-tertiary-light, 0.85),
-        rgba($color-tertiary-dark, 0.85)
-      );
+
+    &-1 {
+      left: calc(50% - 3.3rem);
+    }
+
+    &-2 {
+      left: calc(50% - 8.7rem);
+      top: -1rem;
+      height: 15rem;
+    }
+    &-3 {
+      left: calc(50% - 10rem);
     }
   }
 
   &__details {
-    padding: 3rem;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0;
+    }
 
-    ul {
-      list-style: none;
-      width: 80%;
-      margin: 0 auto;
-
-      li {
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 1rem;
-
-        &:not(:last-child) {
-          border-bottom: 0.01rem solid $color-grey-light-2;
-        }
+    &-item {
+      list-style-type: none;
+      vertical-align: middle;
+      text-transform: uppercase;
+      &:nth-child(6) {
+        text-transform: none;
       }
     }
   }
 
-  //BACK SIDE STYLING
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 1rem 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 
-  &__cta {
+  /* Hide the browser's default checkbox */
+  #subscribe {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
   }
 
-  &__price-box {
-    text-align: center;
-    margin-bottom: 8rem;
-    color: $color-white;
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: $color-white;
+    transition: all 300ms;
   }
 
-  &__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase;
+  .container:hover input ~ .checkmark {
+    background-color: $color-grey-dark;
   }
 
-  &__price-value {
-    font-size: 6rem;
-    font-weight: 100;
+  .container input:checked ~ .checkmark {
+    background-color: $color-primary;
   }
 
-  //Media Query
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
 
-  // @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-  //   height: auto;
-  //   border-radius: 0.3rem;
-  //   background-color: $color-white;
-  //   box-shadow: $box-shadow;
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
 
-  //   &__side {
-  //     height: auto;
-  //     position: relative;
-  //     box-shadow: none;
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid $color-white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  &--icon {
+    height: 1rem;
+  }
 
-  //     &--back {
-  //       transform: rotateY(0);
-  //       clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-  //     }
-  //   }
+  &--button {
+    border: none;
+  }
 
-  //   &__details {
-  //     padding: 1rem;
-  //   }
+  &--payments-accepted {
+    padding: 1rem 0;
+    margin: 1rem;
+    height: 1rem;
+    min-width: 70%;
+    background: url("../images/payments.png") no-repeat center;
+    background-size: 19rem;
+  }
+}
 
-  //   &:hover &__side--front {
-  //     transform: rotateY(0);
-  //   }
+.item-1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: $color-primary;
+}
 
-  //   &__cta {
-  //     position: relative;
-  //     top: 0;
-  //     left: 0;
-  //     transform: translate(0);
-  //     width: 100%;
-  //     padding: 7rem 4rem 4rem 4rem;
-  //   }
+.item-2 {
+  font-size: 1.5rem;
+  color: $color-secondary-light;
+}
 
-  //   &__price-box {
-  //     margin-bottom: 3rem;
-  //   }
+.item-3 {
+  font-size: 2.5rem;
+  color: $color-primary;
+  font-weight: 700;
+  display: flex;
+}
 
-  //   &__price-value {
-  //     font-size: 4rem;
-  //   }
-  // }
+.subscript {
+  font-size: 50%;
+  margin-top: 0.6rem;
+}
+
+.item-4 {
+  display: flex;
+
+  color: $color-secondary-light;
+}
+
+.subscript-2 {
+  font-size: 7px;
+  margin-top: 0.3rem;
+}
+
+.item-5 {
+  color: $color-secondary-light;
+  font-weight: 700;
+}
+
+.item-6 {
+  font-weight: 200;
+}
+
+.ofbtl {
+  position: absolute;
+  top: 7rem;
+  left: 19rem;
+  z-index: 3;
+  height: 5rem;
+}
+
+.tfbtl {
+  position: absolute;
+  top: 5.5rem;
+  left: 12.8rem;
+  z-index: 3;
+  height: 5rem;
 }

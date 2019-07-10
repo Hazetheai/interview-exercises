@@ -17,21 +17,45 @@
     height: 80%;
   }
 
+  &--hydration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: $color-white;
+  }
+
+  &--stars {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
   &--main {
     flex: 4 1 auto;
     min-width: 17rem;
+    flex-direction: column;
   }
 }
 
 .hydration {
   text-align: center;
+  font-family: "brilliantte_presonal_use_onRg";
 }
 
 .hydration--sales {
   text-align: center;
+  font-family: "Baskerville Regular";
 }
 
 .discount25 {
+  text-align: center;
+}
+
+.hydroxinol {
+  font-family: "PT Sans", sans-serif;
   text-align: center;
 }
 
@@ -72,11 +96,12 @@
     background: $color-white;
     position: absolute;
     top: 5.1rem;
-    left: calc(50% - 6rem);
+    left: calc(50% - 5rem);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 10px;
-    min-width: 12rem;
+    min-width: 10rem;
+    padding: 0 0.5rem;
   }
 }
 .letter {

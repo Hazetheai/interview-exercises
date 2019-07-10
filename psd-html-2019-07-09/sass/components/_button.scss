@@ -4,9 +4,9 @@
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 5rem;
     display: inline-block;
-    border-radius: 10rem;
+    border-radius: 0.3rem;
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
@@ -56,7 +56,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 10rem;
+    border-radius: 0.3rem;
     position: absolute;
     top: 0;
     left: 0;
