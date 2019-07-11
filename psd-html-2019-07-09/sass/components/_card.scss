@@ -4,17 +4,35 @@
   justify-content: center;
   align-items: center;
   margin: auto;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 
 .card-col {
   width: 30rem;
   background-color: $color-white;
 
+  @include respond(tab-port) {
+    width: 28rem;
+    margin: 3rem;
+  }
+
   &__center {
     width: 28rem;
     height: 56rem;
     z-index: 5;
     margin: 0 -5px;
+
+    @include respond(tab-port) {
+      width: 36rem;
+      margin: 4rem;
+    }
+
+    @include respond(tab-port) {
+      width: 30rem;
+      margin: 3rem;
+    }
   }
 }
 

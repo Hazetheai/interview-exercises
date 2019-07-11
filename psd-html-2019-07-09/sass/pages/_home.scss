@@ -4,16 +4,20 @@ main {
   background-color: $color-grey-light-2;
 }
 
+.section-toours {
+  max-width: 100vw;
+}
+
 .section-banner {
   background-color: $color-primary;
   min-height: 8rem;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  max-width: 100vw;
 }
 
 .section-header {
-  width: 100vw;
+  max-width: 100vw;
 }
 
 .section-footer {

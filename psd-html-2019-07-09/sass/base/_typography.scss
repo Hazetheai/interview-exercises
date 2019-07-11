@@ -102,19 +102,35 @@ body {
   color: $color-primary;
   text-decoration: none;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    text-align: center;
+  }
 }
 
 .primary-text {
   color: $color-primary;
   text-decoration: none;
+
+  @include respond(phone) {
+    text-align: center;
+  }
 }
 
 .bold-text {
   font-weight: 700;
   font-size: 2rem;
   color: $color-black;
+
+  @include respond(phone) {
+    text-align: center;
+  }
 }
 
 .black-text {
   color: $color-black;
+
+  @include respond(phone) {
+    text-align: center;
+  }
 }

@@ -17,6 +17,10 @@
     height: 80%;
   }
 
+  @include respond(phone) {
+    padding: 0;
+  }
+
   &--hydration {
     display: flex;
     flex-direction: column;
@@ -34,11 +38,18 @@
     & > img {
       height: 1.4rem;
     }
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &--main {
     // flex: 4 1 auto;
     flex-direction: column;
+    @include respond(phone) {
+      display: none;
+    }
   }
 }
 
@@ -89,6 +100,10 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem;
+
+    @include respond(phone) {
+      bottom: 4.9rem;
+    }
   }
 
   &__time {
