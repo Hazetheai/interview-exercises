@@ -2,6 +2,8 @@
   &,
   &:link,
   &:visited {
+    color: $color-secondary-dark;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 5rem;
@@ -9,7 +11,7 @@
     border-radius: 0.3rem;
     transition: all 0.2s;
     position: relative;
-    font-size: $default-font-size;
+    font-size: 2rem;
 
     //change for the button element
     border: none;
@@ -43,11 +45,11 @@
   }
 
   &--green {
-    background-color: $color-primary;
+    background-color: $color-primary-light;
     color: $color-white;
 
     &::after {
-      background-color: $color-primary;
+      background-color: $color-primary-light;
     }
   }
 

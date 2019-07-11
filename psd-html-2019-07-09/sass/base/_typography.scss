@@ -7,15 +7,18 @@ body {
 }
 
 .heading-primary {
-  font-size: 4rem;
+  font-size: 4.3rem;
   color: $color-black;
-  text-transform: uppercase;
 
   backface-visibility: hidden;
 
-  animation: moveInLeft 1s ease-in-out;
+  animation: moveInLeft 0.8s ease-in-out;
   @include respond(phone) {
     letter-spacing: 0.5rem;
+  }
+
+  &-1 {
+    text-transform: uppercase;
   }
 
   &--main {
@@ -25,7 +28,7 @@ body {
     letter-spacing: 3.5rem;
     color: $color-primary;
 
-    animation: moveInLeft 1s ease-in-out;
+    animation: moveInLeft 0.8s ease-in-out;
 
     @include respond(phone) {
       letter-spacing: 1rem;
@@ -35,11 +38,13 @@ body {
   }
 
   &--sub {
+    font-family: "Myriad Pro Semibold" sans-serif;
     display: block;
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 3.2rem;
+    // font-weight: 700;
     color: $color-white;
-    animation: moveInRight 1s ease-in-out;
+    animation: moveInRight 0.8s ease-in-out;
+    transform: scale(0.8, 0.6);
     @include respond(phone) {
       letter-spacing: 0.5rem;
     }
@@ -47,7 +52,8 @@ body {
 }
 
 .heading-secondary {
-  font-size: 3rem;
+  font-size: 2.5rem;
+
   // text-transform: uppercase;
   font-weight: 700;
   // background-image: linear-gradient(
@@ -78,10 +84,10 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  text-transform: uppercase;
-  color: $color-secondary-light;
+  text-transform: capitalize;
+  color: $color-black;
 }
 
 .paragraph {
@@ -96,4 +102,19 @@ body {
   color: $color-primary;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.primary-text {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+.bold-text {
+  font-weight: 700;
+  font-size: 2rem;
+  color: $color-black;
+}
+
+.black-text {
+  color: $color-black;
 }
