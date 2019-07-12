@@ -1046,6 +1046,17 @@ body {
     transition: all 300ms;
   }
 }
+
+@media only screen and (max-width: 30em) {
+  .nav__item:nth-child(2) {
+    margin-left: -18rem;
+    min-width: 21.5rem;
+  }
+  .nav__item:nth-child(2):hover {
+    transform: translateX(32vw);
+    transition: all 300ms;
+  }
+}
 .nav__item:nth-child(3) {
   min-width: 34.5rem;
   background-color: #94c12b;
