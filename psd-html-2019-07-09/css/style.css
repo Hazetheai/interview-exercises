@@ -1042,7 +1042,7 @@ body {
     min-width: 21.5rem;
   }
   .nav__item:nth-child(2):hover {
-    transform: translateX(26vw);
+    transform: translateX(31vw);
     transition: all 300ms;
   }
 }
